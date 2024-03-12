@@ -6,12 +6,12 @@ metadata:
     version: 0.0.1
     description: 'base-flow2'
 spec:
-  triggerEnvironment: my-env
+  triggerEnvironment: qa
   postTrigger: 'post-action'
   steps:
   - environment: staging
     dependsOn:
-    - my-env
+    - qa
     policy:
       preAction: 'pre-action'
       postAction: 'post-action'
