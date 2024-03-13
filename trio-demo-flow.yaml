@@ -14,7 +14,7 @@ spec:
     - dev
     policy:
       preAction: 'pre-action'
-      postAction: 'post-action'
+      postAction: 'smoketests'
       action: commit
   - environment: staging
     dependsOn:

@@ -15,7 +15,7 @@ spec:
     Chart.yaml:
       jsonPaths:
         - $.appVersion
-    Values.yaml:
+    values.yaml:
       jsonPaths:
         - $.buslog.image.tag
         - $.ctrlr.image.tag
