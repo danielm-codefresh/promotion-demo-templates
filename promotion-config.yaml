@@ -5,8 +5,8 @@ metadata:
 spec:
   applicationSourceSelector:
     matchExpressions:
-      - key: app.kubernetes.io/instance
-        operator: Exists
+    - key: app.kubernetes.io/instance
+      operator: Exists
   priority: 0
   versionSource:
     file: Chart.yaml
