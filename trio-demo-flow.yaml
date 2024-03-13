@@ -18,7 +18,7 @@ spec:
       action: commit
   - environment: staging
     dependsOn:
-    - qa
+    - dev
     policy:
       preAction: 'pre-action'
       postAction: 'post-action'
@@ -26,6 +26,7 @@ spec:
   - environment: production
     dependsOn:
     - staging
+    - qa
     policy:
       preAction: 'pre-action'
       postAction: 'post-action'
