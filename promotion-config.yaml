@@ -12,6 +12,11 @@ spec:
     file: Chart.yaml
     jsonPath: appVersion
   promotion:
-    guestbook-ui-deployment.yaml:
+    Chart.yaml:
       jsonPaths:
-        - $..image
+        - $.appVersion
+    Values.yaml:
+      jsonPaths:
+        - $.buslog.image.tag
+        - $.ctrlr.image.tag
+        - $.flask-ui.image.tag
