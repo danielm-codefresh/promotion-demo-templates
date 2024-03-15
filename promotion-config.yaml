@@ -5,7 +5,7 @@ metadata:
 spec:
   applicationSourceSelector:
     matchExpressions:
-    - key: app\u002ekubernetes\u002eio/instance
+    - key: app.kubernetes.io/instance
       operator: Exists
   priority: 0
   versionSource:
