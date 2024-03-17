@@ -12,6 +12,9 @@ spec:
     file: version.yaml
     jsonPath: $.version
   promotion:
+    version.yaml:
+      jsonPaths:
+        - $.version
     Chart.yaml:
       jsonPaths:
         - $.appVersion
